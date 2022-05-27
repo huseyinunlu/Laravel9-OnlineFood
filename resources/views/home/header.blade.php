@@ -46,7 +46,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="img/header-logo.png" alt="TakeAway">
+                        <img src="{{asset('assets')}}/img/header-logo.png" alt="TakeAway">
                     </a>
                 </div>
 

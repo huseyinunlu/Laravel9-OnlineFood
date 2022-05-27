@@ -10,6 +10,6 @@ class HomeController extends Controller
     //
 
     public function index(){
-        echo "My admin panel";
+        return view("admin.index");
     }
 }

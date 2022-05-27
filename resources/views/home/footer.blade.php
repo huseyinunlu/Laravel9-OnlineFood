@@ -86,14 +86,14 @@
 <script>
     window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
 </script>
-<script src="js/masterslider/masterslider.min.js"></script>
-<script src="js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/owl.carousel.js"></script>
-<script src="js/bootstrap.js"></script>
+<script src="{{asset('assets')}}/js/masterslider/masterslider.min.js"></script>
+<script src="{{asset('assets')}}/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+<script src="{{asset('assets')}}/js/jquery.magnific-popup.min.js"></script>
+<script src="{{asset('assets')}}/js/owl.carousel.js"></script>
+<script src="{{asset('assets')}}/js/bootstrap.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-<script type="text/javascript" src="js/jquery.ui.map.js"></script>
-<script src="js/scripts.js"></script>
+<script type="text/javascript" src="{{asset('assets')}}/js/jquery.ui.map.js"></script>
+<script src="{{asset('assets')}}/js/scripts.js"></script>
 
 <script>
 
