@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>App Name - @yield('title')</title>
     <!-- Stylesheets -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{asset('assets')}}/css/bootstrap.css">
     <link rel="stylesheet" href="{{asset('assets')}}/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{asset('assets')}}/js/masterslider/style/masterslider.css">

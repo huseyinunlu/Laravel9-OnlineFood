@@ -57,85 +57,70 @@
             <span class="nav-link">Navigation</span>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="index.html">
-              <span class="menu-icon">
-                <i class="mdi mdi-speedometer"></i>
-              </span>
-                <span class="menu-title">Dashboard</span>
-            </a>
-        </li>
-        <li class="nav-item menu-items">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
-                <i class="mdi mdi-laptop"></i>
+                <i class="mdi mdi-truck-delivery"></i>
               </span>
-                <span class="menu-title">Basic UI Elements</span>
+                <span class="menu-title">Orders</span>
                 <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('assets')}}/admin/pages/ui-features/buttons.html">Buttons</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('assets')}}/admin/pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('assets')}}/admin/pages/ui-features/typography.html">Typography</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{{asset('assets')}}/admin/pages/ui-features/buttons.html">New Orders</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{{asset('assets')}}/admin/pages/ui-features/dropdowns.html">Accepted Orders</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{{asset('assets')}}/admin/pages/ui-features/typography.html">Shipping Orders</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{{asset('assets')}}/admin/pages/ui-features/buttons.html">Completed Orders</a></li>
+
                 </ul>
             </div>
         </li>
+
         <li class="nav-item menu-items">
-            <a class="nav-link" href="{{asset('assets')}}/admin/pages/forms/basic_elements.html">
+            <a class="nav-link" href="/admin/category">
               <span class="menu-icon">
-                <i class="mdi mdi-playlist-play"></i>
+                <i class="mdi mdi-collage"></i>
               </span>
-                <span class="menu-title">Form Elements</span>
+                <span class="menu-title">Categories</span>
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="{{asset('assets')}}/admin/pages/tables/basic-table.html">
+            <a class="nav-link" href="/admin/products">
               <span class="menu-icon">
-                <i class="mdi mdi-table-large"></i>
+                <i class="mdi mdi-package-variant"></i>
               </span>
-                <span class="menu-title">Tables</span>
+                <span class="menu-title">Products</span>
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="{{asset('assets')}}/admin/pages/charts/chartjs.html">
+            <a class="nav-link" href="/admin/pages/comments">
               <span class="menu-icon">
-                <i class="mdi mdi-chart-bar"></i>
+                <i class="mdi mdi-comment"></i>
               </span>
-                <span class="menu-title">Charts</span>
+                <span class="menu-title">Comments</span>
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="{{asset('assets')}}/admin/pages/icons/mdi.html">
+            <a class="nav-link" href="/admin/faq">
               <span class="menu-icon">
-                <i class="mdi mdi-contacts"></i>
+                <i class="mdi mdi-comment-question-outline"></i>
               </span>
-                <span class="menu-title">Icons</span>
+                <span class="menu-title">FAQ</span>
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+            <a href="/admin/users" class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <span class="menu-icon">
-                <i class="mdi mdi-security"></i>
+                <i class="mdi mdi-account"></i>
               </span>
-                <span class="menu-title">User Pages</span>
-                <i class="menu-arrow"></i>
+                <span class="menu-title">Users</span>
             </a>
-            <div class="collapse" id="auth">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('assets')}}/admin/pages/samples/blank-page.html"> Blank Page </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('assets')}}/admin/pages/samples/error-404.html"> 404 </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('assets')}}/admin/pages/samples/error-500.html"> 500 </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('assets')}}/admin/pages/samples/login.html"> Login </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('assets')}}/admin/pages/samples/register.html"> Register </a></li>
-                </ul>
-            </div>
         </li>
         <li class="nav-item menu-items">
             <a class="nav-link" href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html">
               <span class="menu-icon">
-                <i class="mdi mdi-file-document-box"></i>
+                <i class="mdi mdi-thumb-up"></i>
               </span>
-                <span class="menu-title">Documentation</span>
+                <span class="menu-title">Social</span>
             </a>
         </li>
     </ul>

@@ -22,19 +22,19 @@
             <div class="card-body">
                 <h4 class="card-title">Add Category</h4>
                 <p class="card-description"> Add Category </p>
-                <form class="forms-sample" role="form" action="/admin/category/store">
+                <form class="forms-sample" role="form" action="/admin/category/update/{{$data->id}}}" method="post">
                     @csrf
                     <div class="form-group">
                         <label >Title</label>
-                        <input type="text" class="form-control" name="title" id="exampleInputUsername1" placeholder="Title">
+                        <input type="text" class="form-control" name="title" id="exampleInputUsername1" value="{{$data->title}}"}>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Keywords</label>
-                        <input type="text" class="form-control" name="keywords" id="exampleInputEmail1" placeholder="keyword1 keyword2 ...">
+                        <input type="text" class="form-control" name="keywords" id="exampleInputEmail1" value="{{$data->keywords}}">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Description</label>
-                        <input type="text" class="form-control" name="description" id="exampleInputPassword1" placeholder="Description">
+                        <input type="text" class="form-control" name="description" id="exampleInputPassword1" value="{{$data->description}}">
                     </div>
                     <div class="form-group">
                         <label>Image</label>
@@ -51,8 +51,15 @@
                             <label class="col-sm-3 col-form-label">Status</label>
                             <div class="col-sm-9">
                                 <select name="status" class="form-control">
-                                    <option>True</option>
-                                    <option>False</option>
+                                    @if("{{$data->status}}" == "True")
+                                        <option>True</option>
+
+                                        <option>False</option>
+                                    @else
+                                        <option>False</option>
+                                        <option>True</option>
+                                    @endif
+
                                 </select>
                             </div>
                         </div>

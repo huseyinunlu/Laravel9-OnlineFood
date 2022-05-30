@@ -51,6 +51,10 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="badge badge-danger" ><a href="/admin/category/create">
+                    <span class="menu-title">Add Category</span>
+                </a>
+                </div>
             </div>
         </div>
     </div>
