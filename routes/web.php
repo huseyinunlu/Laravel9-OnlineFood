@@ -48,15 +48,21 @@ Route::middleware([
 });
 
 /*##############################     ADMIN         #########################*/
+Route::prefix('admin')->name('admin.')->group(function (){
+    Route::get('/', [AdminHomeController::class, 'index'])->name('index');
 
-Route::get('/admin', [AdminHomeController::class, 'index'])->name('admin');
+
 
 /*##############################     Admin Category         #########################*/
-Route::get('/admin/category', [AdminCategoryController::class, 'index'])->name('admin_category');
-Route::get('/admin/category/create', [AdminCategoryController::class, 'create'])->name('admin_category_create');
-Route::post('/admin/category/store', [AdminCategoryController::class, 'store'])->name('admin_category_store');
-Route::get('/admin/category/edit/{id}', [AdminCategoryController::class, 'edit'])->name('admin_category_edit');
-Route::get('/admin/category/delete/{id}', [AdminCategoryController::class, 'destroy'])->name('admin_category_delete');
-Route::get('/admin/category/show/{id}', [AdminCategoryController::class, 'show'])->name('admin_category_show');
-Route::post('/admin/category/update/{id}', [AdminCategoryController::class, 'update'])->name('admin_category_update');
+    Route::prefix('/category')->name('category.')->group(function (){
+        Route::get('/', [AdminCategoryController::class, 'index'])->name('index');
+        Route::get('/create', [AdminCategoryController::class, 'create'])->name('create');
+        Route::post('/store', [AdminCategoryController::class, 'store'])->name('store');
+        Route::get('/edit/{id}', [AdminCategoryController::class, 'edit'])->name('edit');
+        Route::get('/delete/{id}', [AdminCategoryController::class, 'destroy'])->name('delete');
+        Route::get('/show/{id}', [AdminCategoryController::class, 'show'])->name('show');
+        Route::post('/update/{id}', [AdminCategoryController::class, 'update'])->name('update');
+    });
 
+
+});

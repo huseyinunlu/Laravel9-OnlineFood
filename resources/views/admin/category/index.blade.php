@@ -42,16 +42,17 @@
                             @else
                                 <td><label class="badge badge-danger">{{$rs->status}}</label></td>
                             @endif
-                            <td><a href="/admin/category/edit/{{$rs->id}}" class="badge badge-success">Edit</td>
-                            <td><a href="/admin/category/delete/{{$rs->id}}" class="badge badge-danger" onclick="return confirm('Are you sure you want to delete?')">Delete</td>
-                            <td><a href="/admin/category/show/{{$rs->id}}" class="badge badge-warning">Show</td>
+                            <td><a href="{{route('admin.category.edit', ['id'=>$rs->id])}}" class="badge badge-success">Edit</td>
+                            <td><a href="{{route('admin.category.delete', ['id'=>$rs->id])}}" class="badge badge-danger"
+                                   onclick="return confirm('Are you sure you want to delete?')">Delete</td>
+                            <td><a href="{{route('admin.category.show', ['id'=>$rs->id])}}" class="badge badge-warning">Show</td>
                         </tr>
                         @endforeach
 
                         </tbody>
                     </table>
                 </div>
-                <div class="badge badge-danger" ><a href="/admin/category/create">
+                <div class="badge badge-danger" ><a href="{{route('admin.category.create')}}">
                     <span class="menu-title">Add Category</span>
                 </a>
                 </div>

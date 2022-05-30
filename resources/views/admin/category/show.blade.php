@@ -48,8 +48,8 @@
                                 <td>{{$data->updated_at}}</td>
                             </tr>
                             <tr>
-                            <td><a href="/admin/category/edit/{{$data->id}}" class="badge badge-success">Edit</td>
-                            <td><a href="/admin/category/delete/{{$data->id}}" class="badge badge-danger" onclick="return confirm('Are you sure you want to delete?')">Delete</td>
+                            <td><a href="{{route('admin.category.edit', ['id'=>$data->id])}}" class="badge badge-success">Edit</td>
+                            <td><a href="{{route('admin.category.delete', ['id'=>$data->id])}}" class="badge badge-danger" onclick="return confirm('Are you sure you want to delete?')">Delete</td>
                             </tr>
                             </tbody>
                         </table>

@@ -22,7 +22,7 @@
             <div class="card-body">
                 <h4 class="card-title">Add Category</h4>
                 <p class="card-description"> Add Category </p>
-                <form class="forms-sample" role="form" action="admin/category/store" method="post">
+                <form class="forms-sample" role="form" action="{{route('admin.category.store')}}" method="post">
                     @csrf
                     <div class="form-group">
                         <label for="exampleInputUsername1">Title</label>
