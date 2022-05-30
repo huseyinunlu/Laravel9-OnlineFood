@@ -43,7 +43,7 @@
                                 <td><label class="badge badge-danger">{{$rs->status}}</label></td>
                             @endif
                             <td><a href="/admin/category/edit/{{$rs->id}}" class="badge badge-success">Edit</td>
-                            <td><a href="/admin/category/delete/{{$rs->id}}" class="badge badge-danger">Delete</td>
+                            <td><a href="/admin/category/delete/{{$rs->id}}" class="badge badge-danger" onclick="return confirm('Are you sure you want to delete?')">Delete</td>
                             <td><a href="/admin/category/show/{{$rs->id}}" class="badge badge-warning">Show</td>
                         </tr>
                         @endforeach
