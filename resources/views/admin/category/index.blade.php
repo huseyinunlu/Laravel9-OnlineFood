@@ -32,11 +32,16 @@
                         <tbody>
                         @foreach($data as $rs)
                         <tr>
+                            <td>
+                                @if($rs->image != NULL)
+                                    <img src="{{Storage::url($rs->image)}}" style="height: 100px; width: 100px">
 
+                                @endif
+                            </td>
                             <td>{{$rs->title}}</td>
                             <td>{{$rs->keywords}}</td>
                             <td>{{$rs->description}}</td>
-                            <td>{{$rs->image}}</td>
+
                             @if($rs->status == "True")
                             <td><label class="badge badge-success">{{$rs->status}}</label></td>
                             @else

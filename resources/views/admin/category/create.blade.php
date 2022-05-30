@@ -22,7 +22,7 @@
             <div class="card-body">
                 <h4 class="card-title">Add Category</h4>
                 <p class="card-description"> Add Category </p>
-                <form class="forms-sample" role="form" action="{{route('admin.category.store')}}">
+                <form class="forms-sample" role="form" action="{{route('admin.category.store')}}" enctype="multipart/form-data" method="post">
                     @csrf
                     <div class="form-group">
                         <label >Title</label>
@@ -38,9 +38,9 @@
                     </div>
                     <div class="form-group">
                         <label>Image</label>
-                        <input type="file" name="img[]" class="file-upload-default">
+                        <input type="text" name="image" class="file-upload-default">
                         <div class="input-group col-xs-12">
-                            <input type="text" class="form-control file-upload-info" name="image" disabled placeholder="Upload Image">
+                            <input type="file" class="form-control file-upload-info" name="image">
                             <span class="input-group-append">
                             <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
                           </span>

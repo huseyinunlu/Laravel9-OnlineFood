@@ -18,6 +18,15 @@
                         <table class="table">
                             <tbody>
                             <tr>
+                                <th>Image</th>
+                                <td>
+                                    @if($data->image != NULL)
+                                        <img src="{{Storage::url($data->image)}}" style="height: 150px; width: 150px">
+
+                                    @endif
+                                </td>
+                            </tr>
+                            <tr>
                                 <th>Id</th>
                                 <td>{{$data->id}}</td>
                             </tr>
@@ -31,10 +40,7 @@
                                 <th>Keywords</th>
                                 <td>{{$data->keywords}}</td>
                             </tr>
-                            <tr>
-                                <th>Image</th>
-                                <td>{{$data->image}}</td>
-                            </tr>
+
                             <tr>
                                 <th>Status</th>
                                 <td>{{$data->status}}</td>
