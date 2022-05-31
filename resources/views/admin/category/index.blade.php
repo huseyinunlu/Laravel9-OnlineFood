@@ -18,10 +18,11 @@
                     <table class="table">
                         <thead>
                         <tr>
+                            <th>Image</th>
+                            <th>ID</th>
                             <th>Title</th>
                             <th>Keywords</th>
                             <th>Description</th>
-                            <th>Image</th>
                             <th>Status</th>
                             <td>Edit</td>
                             <td>Delete</td>
@@ -38,6 +39,8 @@
 
                                 @endif
                             </td>
+                            <td>{{$rs->id}}</td>
+                            <td>{{\App\Http\Controllers\AdminPanel\CategoryController::getParentsTree($rs, $rs->title)}}</td>
                             <td>{{$rs->title}}</td>
                             <td>{{$rs->keywords}}</td>
                             <td>{{$rs->description}}</td>

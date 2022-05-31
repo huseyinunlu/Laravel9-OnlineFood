@@ -24,6 +24,18 @@
                 <p class="card-description"> Add Category </p>
                 <form class="forms-sample" role="form" action="{{route('admin.category.store')}}" enctype="multipart/form-data" method="post">
                     @csrf
+
+
+                    <div class="form-group">
+                        <label>Parent Category</label>
+                        <select name="parent_id" class="form-control">
+                            <option value="0" class="form-control" selected="selected">Main Category</option>
+                            @foreach($data as $rs)
+                                <option value="{{$rs->id}}"> {{ \App\Http\Controllers\AdminPanel\CategoryController::getParentsTree($rs, $rs->title) }} </option>
+                            @endforeach
+
+                        </select>
+                    </div>
                     <div class="form-group">
                         <label >Title</label>
                         <input type="text" class="form-control" name="title" id="exampleInputUsername1" placeholder="Title">
